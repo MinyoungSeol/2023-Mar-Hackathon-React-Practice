@@ -116,7 +116,7 @@ function App() {
         title.map(function(a, i){
           return (
             <div className="list" key={i}>
-              <h3 onClick={()=>{ setModal(!modal); setModalTitle(i) }}>{ title[i] }</h3> {/* {a} 도 가능 | 두번째 파라미터 i는 반복문이 돌때마다 1씩 증가하는 정수*/}
+              <h3 onClick={()=>{ setModal(!modal); setModalTitle(i) }}> { title[i] } </h3> {/* {a} 도 가능 | 두번째 파라미터 i는 반복문이 돌때마다 1씩 증가하는 정수*/}
               <p>2월 17일 발행</p>
               <span onClick={ ()=>{ 
                 let likeIndex = [...like];
